@@ -69,7 +69,10 @@ require_once 'includes/lang/' . $lang . '.php';
                             <img src="<?php echo $img_data['picture']; ?>" alt="AIT OUFKIR BRAHIM" width="50"
                                 height="50" />
                         </div>
-                        <ul>
+                        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
+                            <span class="hamburger-icon"></span>
+                        </button>
+                        <ul id="menu" class="nav-menu">
                             <li><a href="#services"><?php echo $lang_data['menu_services']; ?></a></li>
                             <li><a href="#skills"><?php echo $lang_data['menu_skills']; ?></a></li>
                             <li><a href="#portfolio"><?php echo $lang_data['menu_portfolio']; ?></a></li>
@@ -82,11 +85,14 @@ require_once 'includes/lang/' . $lang . '.php';
                                 <i class="arrow-icon"></i>
                             </button>
                             <ul id="language-options" class="hidden">
-                                <li><a href="?lang=fr" data-lang="FR">FR</a></li>
-                                <li><a href="?lang=en" data-lang="EN">EN</a></li>
+                                <?php if ($lang !== 'fr'): ?>
+                                    <li><a href="?lang=fr">FR</a></li>
+                                <?php endif; ?>
+                                <?php if ($lang !== 'en'): ?>
+                                    <li><a href="?lang=en">EN</a></li>
+                                <?php endif; ?>
                             </ul>
                         </div>
-
                     </nav>
                 </div>
             </header>
