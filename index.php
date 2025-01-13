@@ -1,9 +1,23 @@
 <?php
 session_start();
-// Set default language
+
+// Check if a language is selected via URL
+if (isset($_GET['lang'])) {
+    $selected_lang = $_GET['lang'];
+    // Validate the selected language
+    if (in_array($selected_lang, ['en', 'fr'])) {
+        $_SESSION['lang'] = $selected_lang; // Update the session variable
+    }
+    // Redirect to avoid query parameters in the URL after setting the session
+    header("Location: index.php");
+    exit();
+}
+
+// Set the default language if not already set
 $lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : 'fr';
 require_once 'includes/lang/' . $lang . '.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
 
@@ -27,7 +41,7 @@ require_once 'includes/lang/' . $lang . '.php';
                                     <li>
                                         <a href="tel:&#43;&#50;&#49;&#50;&#54;&#54;&#51;&#56;&#50;&#56;&#52;&#48;&#53;">
                                             <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone"
-                                                width="21" height="21">  &nbsp;
+                                                width="21" height="21"> &nbsp;
                                             &#43;&#50;&#49;&#50;&#54;&#54;&#51;&#56;&#50;&#56;&#52;&#48;&#53;
                                         </a>
                                     </li>
@@ -35,7 +49,8 @@ require_once 'includes/lang/' . $lang . '.php';
                                         <a
                                             href="mailto:&#97;&#105;&#116;&#111;&#117;&#102;&#107;&#105;&#114;&#98;&#114;&#97;&#104;&#105;&#109;&#97;&#98;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
                                             <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png"
-                                                alt="Envelope" width="21" height="21" style="filter: invert(100%);"> &nbsp;
+                                                alt="Envelope" width="21" height="21" style="filter: invert(100%);">
+                                            &nbsp;
                                             &#97;&#105;&#116;&#111;&#117;&#102;&#107;&#105;&#114;&#98;&#114;&#97;&#104;&#105;&#109;&#97;&#98;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
                                         </a>
                                     </li>
@@ -51,7 +66,8 @@ require_once 'includes/lang/' . $lang . '.php';
                     </div>
                     <nav>
                         <div class="logo">
-                           <img src="<?php echo $img_data['picture']; ?>" alt="AIT OUFKIR BRAHIM" width="50" height="50" />
+                            <img src="<?php echo $img_data['picture']; ?>" alt="AIT OUFKIR BRAHIM" width="50"
+                                height="50" />
                         </div>
                         <ul>
                             <li><a href="#services"><?php echo $lang_data['menu_services']; ?></a></li>
@@ -61,9 +77,16 @@ require_once 'includes/lang/' . $lang . '.php';
                             <li><a href="#contact"><?php echo $lang_data['menu_contact']; ?></a></li>
                         </ul>
                         <div class="language-switcher">
-                            <a href="?lang=fr">FR</a>
-                            <a href="?lang=en">EN</a>
+                            <button id="language-toggle" aria-label="Toggle Language">
+                                <span id="current-lang"><?php echo strtoupper($lang); ?></span>
+                                <i class="arrow-icon"></i>
+                            </button>
+                            <ul id="language-options" class="hidden">
+                                <li><a href="?lang=fr" data-lang="FR">FR</a></li>
+                                <li><a href="?lang=en" data-lang="EN">EN</a></li>
+                            </ul>
                         </div>
+
                     </nav>
                 </div>
             </header>

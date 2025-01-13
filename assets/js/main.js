@@ -1,28 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Smooth scrolling for navigation
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-              behavior: 'smooth'
-          });
-      });
-  });
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("language-toggle");
+    const languageOptions = document.getElementById("language-options");
 
-  // Language switching via AJAX (optional enhancement)
-  const languageSwitcher = document.querySelectorAll('.language-switcher a');
-  languageSwitcher.forEach(link => {
-      link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const lang = link.textContent.toLowerCase();
-          
-          fetch(`?lang=${lang}`, {
-              method: 'GET'
-          }).then(response => {
-              if (response.ok) {
-                  window.location.reload();
-              }
-          });
-      });
-  });
+    // Toggle dropdown visibility
+    toggleButton.addEventListener("click", () => {
+        languageOptions.classList.toggle("hidden");
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (event) => {
+        if (!toggleButton.contains(event.target) && !languageOptions.contains(event.target)) {
+            languageOptions.classList.add("hidden");
+        }
+    });
 });

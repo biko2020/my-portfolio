@@ -8,7 +8,7 @@
   --secondary-color: #3498db;
   --text-color: #333;
   --background-color: #f4f4f4;
-  --nav-background-color: #444;
+  --nav-background-color: rgba(68, 68, 68, 0.5);
   --with-color: #fff;
   --bar-color: #111213;
 }
@@ -52,7 +52,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   font-size: 12px;
   line-height: 15px;
   padding-top: 15px;
@@ -60,7 +59,6 @@ body {
   padding-bottom: 10px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-
   z-index: 1;
 }
 
@@ -121,6 +119,7 @@ nav {
   font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
+  flex-wrap: wrap;  /* Allows items to wrap for smaller screens */
 }
 
 nav ul {
@@ -128,6 +127,7 @@ nav ul {
   display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;  /* Allows items to wrap */
 }
 
 nav ul li {
@@ -146,7 +146,7 @@ nav ul li a {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 4px;
@@ -162,15 +162,98 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-  color: var(--secondary-color); /* Optional: Change text color on hover */
+  color: var(--secondary-color);
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
+  cursor: pointer;
 }
 
+/* Languages styling */
+.hidden {
+  display: none;
+}
+
+.language-switcher {
+  position: relative;
+  font-family: Arial, sans-serif;
+  display: inline-flex;
+  align-items: center; /* Aligns button and dropdown vertically */
+}
+
+#language-toggle {
+  background-color: transparent;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#language-toggle:hover {
+  background-color: transparent;
+  color: var(--primary-border, #ccc);
+}
+
+.language-switcher ul {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(255, 255, 255, 0.3);
+  border: 1px solid var(--primary-border, #ccc);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.language-switcher ul li {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-switcher ul li a {
+  color: var(--text-color, #333);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+}
+
+.language-switcher ul li:hover {
+  background-color: var(--hover-color, #f5f5f5);
+}
+
+.language-switcher ul:not(.hidden) {
+  display: block;
+}
+
+.language-switcher ul li:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.language-switcher ul li:last-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
 
 /* Footer styling */
 .footer-container {
@@ -186,6 +269,30 @@ nav ul li a:hover {
   .header-container .top-bar-container {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
+  }
+
+  .info-list {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+
+  .info-list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .header-top {
+    font-size: 14px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 15px 0;
+    align-items: flex-start;
   }
 
   nav ul {
@@ -195,5 +302,50 @@ nav ul li a:hover {
 
   nav ul li {
     margin-bottom: 10px;
+  }
+
+  .logo {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .language-switcher {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .language-switcher ul {
+    left: 0;
+    right: 0;
+    transform: translateX(0); /* Adjust for better alignment */
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header-top {
+    font-size: 14px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .info-list a {
+    font-size: 12px;
+  }
+
+  #social-links a {
+    margin-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 8px 10px;
   }
 }
