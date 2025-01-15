@@ -57,6 +57,21 @@ $lang_data = [
     'services_solutions_training' => 'Training and support',
     'services_solutions_optimization' => 'Assessment and optimization',
 
+    // Custom Solutions Section
+    'custom_solutions_quote' => 'Design and Implementation of Tailored Solutions',
+    'custom_solutions_needs_assessment' => 'NEEDS ASSESSMENT AND DIAGNOSIS',
+    'custom_solutions_needs_assessment_alt' => 'Needs Assessment and Diagnosis',
+    'custom_solutions_design' => 'CUSTOM SOLUTION DESIGN',
+    'custom_solutions_design_alt' => 'Custom Solution Design',
+    'custom_solutions_implementation' => 'IMPLEMENTATION AND INTEGRATION',
+    'custom_solutions_implementation_alt' => 'Implementation and Integration',
+    'custom_solutions_training' => 'TRAINING AND SUPPORT',
+    'custom_solutions_training_alt' => 'Training and Support',
+    'custom_solutions_evaluation' => 'EVALUATION AND OPTIMIZATION',
+    'custom_solutions_evaluation_alt' => 'Evaluation and Optimization',
+    'custom_solutions_delivery' => 'DELIVERY',
+    'custom_solutions_delivery_alt' => 'Delivery',
+
     // Skills Section
     'skills_subtitle' => 'Put these skills to good use',
     'skills_domains_title' => 'Areas of Expertise',

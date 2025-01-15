@@ -57,6 +57,21 @@ $lang_data = [
     'services_solutions_training' => 'Formation et accompagnement',
     'services_solutions_optimization' => 'Évaluation et optimisation',
 
+    // Custom Solutions Section
+    'custom_solutions_quote' => 'Conception et implémentation de solutions sur mesure',
+    'custom_solutions_needs_assessment' => 'ÉVALUATION DES BESOINS ET DIAGNOSTIC',
+    'custom_solutions_needs_assessment_alt' => 'Évaluation des besoins et diagnostic',
+    'custom_solutions_design' => 'CONCEPTION DE SOLUTIONS SUR MESURE',
+    'custom_solutions_design_alt' => 'Conception de solutions sur mesure',
+    'custom_solutions_implementation' => 'MISE EN ŒUVRE ET INTÉGRATION',
+    'custom_solutions_implementation_alt' => 'Mise en œuvre et intégration',
+    'custom_solutions_training' => 'FORMATION ET ACCOMPAGNEMENT',
+    'custom_solutions_training_alt' => 'Formation et accompagnement',
+    'custom_solutions_evaluation' => 'ÉVALUATION ET OPTIMISATION',
+    'custom_solutions_evaluation_alt' => 'Évaluation et optimisation',
+    'custom_solutions_delivery' => 'LIVRAISON',
+    'custom_solutions_delivery_alt' => 'Livraison',
+
     // Skills Section
     'skills_subtitle' => 'Mettre à profit ces compétences pour votre entreprise',
     'skills_domains_title' => 'Domaines de compétences',

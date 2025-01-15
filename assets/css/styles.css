@@ -403,9 +403,9 @@ nav ul li a:hover::after {
 
 .services-section .section-title {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 2.5em;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .services-section .section-description {
@@ -497,15 +497,19 @@ nav ul li a:hover::after {
 }
 
 #skills .domain h3 {
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   color: #007BFF;
   margin-bottom: 10px;
 }
 
 #skills .domain p {
   font-size: 0.9rem;
-  color: #555;
+  /* color: #555; */
   margin-bottom: 5px;
+
+  padding: 10px 0;
+    border-bottom: 1px solid #ecf0f1;
+    
 }
 
 #skills .domain span {
@@ -572,6 +576,69 @@ nav ul li a:hover::after {
 .skills-banner img:hover {
   transform: scale(1.05);
 }
+
+#custom-solutions {
+  background: #000; 
+  color: #fff; 
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#custom-solutions .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#custom-solutions .quote {
+      font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#custom-solutions .quote span {
+  font-size: 40px;
+  color: #fff;
+}
+
+#custom-solutions .solutions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#custom-solutions .solution-item {
+  flex: 1 1 150px;
+  max-width: 200px;
+  text-align: center;
+}
+
+#custom-solutions .solution-item img {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  background: #fff; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin: 0 auto 15px; 
+  padding: 15px; 
+}
+
+#custom-solutions .solution-item img img {
+  width: 40px; 
+  height: 40px;
+}
+
+#custom-solutions .solution-item p {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
 
 /* Media queries */
 @media (max-width: 768px) {
@@ -757,10 +824,7 @@ nav ul li a:hover::after {
     font-size: 1rem;
   }
 
-  #skills .domain h3 {
-    font-size: 1.1rem;
-  }
-
+  
   #skills .domain p,
   #skills .technologies-list span {
     font-size: 0.85rem;

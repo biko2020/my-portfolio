@@ -102,10 +102,10 @@ require_once 'includes/lang/' . $lang . '.php';
                             </button>
                             <ul id="language-options" class="hidden">
                                 <?php if ($lang !== 'fr'): ?>
-                                <li><a href="?lang=fr">FR</a></li>
+                                    <li><a href="?lang=fr">FR</a></li>
                                 <?php endif; ?>
                                 <?php if ($lang !== 'en'): ?>
-                                <li><a href="?lang=en">EN</a></li>
+                                    <li><a href="?lang=en">EN</a></li>
                                 <?php endif; ?>
                             </ul>
                         </div>
@@ -359,12 +359,57 @@ require_once 'includes/lang/' . $lang . '.php';
                         </div>
                     </section>
 
+                    <section id="custom-solutions">
+                        <div class="container">
+                            <h2 class="quote">
+                                <span>"</span><?php echo $lang_data['custom_solutions_quote']; ?><span>"</span>
+                            </h2>
+                            <div class="solutions-grid">
+                                <div class="solution-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2951/2951388.png"
+                                        alt="<?php echo $lang_data['custom_solutions_needs_assessment_alt']; ?>">
+                                    <p><?php echo $lang_data['custom_solutions_needs_assessment']; ?></p>
+                                </div>
+                                <div class="solution-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                                        alt="<?php echo $lang_data['custom_solutions_design_alt']; ?>">
+                                    <p><?php echo $lang_data['custom_solutions_design']; ?></p>
+                                </div>
+                                <div class="solution-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3478/3478121.png"
+                                        alt="<?php echo $lang_data['custom_solutions_implementation_alt']; ?>">
+                                    <p><?php echo $lang_data['custom_solutions_implementation']; ?></p>
+                                </div>
+                                <div class="solution-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/1250/1250620.png"
+                                        alt="<?php echo $lang_data['custom_solutions_training_alt']; ?>">
+                                    <p><?php echo $lang_data['custom_solutions_training']; ?></p>
+                                </div>
+                                <div class="solution-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/1040/1040216.png"
+                                        alt="<?php echo $lang_data['custom_solutions_evaluation_alt']; ?>">
+                                    <p><?php echo $lang_data['custom_solutions_evaluation']; ?></p>
+                                </div>
+                                <div class="solution-item">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/582/582650.png"
+                                        alt="<?php echo $lang_data['custom_solutions_delivery_alt']; ?>">
+                                    <p><?php echo $lang_data['custom_solutions_delivery']; ?></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
                     <section id="portfolio">
-                        <h2>
-                            <?php echo $lang_data['portfolio_title']; ?>
-                        </h2>
-                        <!-- Portfolio projects -->
+                        <div class="container">
+                            <h2 class="section-title">
+                                <?php echo $lang_data['portfolio_title']; ?>
+                            </h2>
+                            <p class="section-subtitle">
+                                <?php echo $lang_data['portfolio_subtitle']; ?>
+                            </p>
+                            <!-- Portfolio projects -->
+                        </div>
+
                     </section>
 
                     <section id="about">
