@@ -135,6 +135,27 @@ $lang_data = [
     'portfolio_project15_description' => 'A dedicated application for managing public markets in Morocco, specially designed for public services of the Moroccan State. It integrates three main modules: Procurement Module (facilitating public market processes from tender preparation to supplier selection), Execution Module (ensuring rigorous monitoring of market execution, deadlines, and budgets), and Purchase Order Module (managing creation, approval, and tracking of purchase orders).',
     'portfolio_project15_technologies' => 'VB6, VB.NET, MS SQL-Server',
 
+    // About Me Section
+    'about_subtitle' => 'Developer Analyst with over 10 years of experience',
+    'about_description_paragraph1' => 'With more than 10 years of experience in developing IT solutions, I have contributed to innovative and impactful projects across various domains.',
+    'about_description_paragraph2' => 'My expertise covers the entire IT project lifecycle, from needs analysis to implementation and user training.',
+    'about_description_paragraph3' => 'As a data analyst and developer, I excel in IT solutions analysis and design, creating websites, mobile applications, and software, as well as in database and system administration.',
+    'about_description_paragraph4' => 'I am proficient in version control, containerization, and continuous integration tools, while implementing robust security measures against cyber attacks.',
+    'about_contact_message' => 'Feel free to contact me if you need my services.',
+    'about_key_skills_title' => 'Key Skills',
+    'about_skill_1_title' => 'IT Solutions Analysis and Design: ',
+    'about_skill_1_description' => 'Expertise in user needs analysis and designing tailored solutions.',
+    'about_skill_2_title' => 'Development: ',
+    'about_skill_2_description' => 'Creation of websites, mobile applications, and custom software.',
+    'about_skill_3_title' => 'Training and Support: ',
+    'about_skill_3_description' => 'User training and technical assistance for optimal solution adoption.',
+    'about_skill_4_title' => 'DevOps Tools: ',
+    'about_skill_4_description' => 'Utilizing version control, containerization, and continuous integration for effective project management.',
+    'about_skill_5_title' => 'IT Security: ',
+    'about_skill_5_description' => 'Implementing robust security measures to protect against cyber attacks.',
+    'about_skill_6_title' => 'Database Management and System Administration: ',
+    'about_skill_6_description' => 'Administration and management of complex databases and Windows and Linux servers.',
+
     // Skills Section
     'skills_subtitle' => 'Put these skills to good use',
     'skills_domains_title' => 'Areas of Expertise',
@@ -156,6 +177,18 @@ $lang_data = [
     
         'skills_methods_title' => 'METHODS and PATTERNS',
         'skills_methods_description' => 'Software Architecture: MVC, Modeling: UML, Version Control: Git, Containerization: Docker, Continuous Integration and Continuous Deployment',
+
+    // Contact Section
+    'contact_subtitle' => 'Let\'s Stay Connected',
+    'contact_description' => 'Have a project or a question? Feel free to contact me.',
+    'contact_phone_label' => 'Phone',
+    'contact_phone' => '+212 663 828 405',
+    'contact_email_label' => 'Email',
+    'contact_email' => 'aitoufkirbrahimab@gmail.com',
+    'contact_form_name' => 'Your Name',
+    'contact_form_email' => 'Your Email',
+    'contact_form_message' => 'Your Message',
+    'contact_form_submit' => 'Send Message',
 ];
 
 // Image Data

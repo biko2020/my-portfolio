@@ -86,7 +86,7 @@ require_once 'includes/lang/' . $lang . '.php';
                             <li><a href="#portfolio">
                                     <?php echo $lang_data['menu_portfolio']; ?>
                                 </a></li>
-                            <li><a href="#about">
+                            <li><a href="#about-me">
                                     <?php echo $lang_data['menu_about']; ?>
                                 </a></li>
                             <li><a href="#contact">
@@ -102,10 +102,10 @@ require_once 'includes/lang/' . $lang . '.php';
                             </button>
                             <ul id="language-options" class="hidden">
                                 <?php if ($lang !== 'fr'): ?>
-                                    <li><a href="?lang=fr">FR</a></li>
+                                <li><a href="?lang=fr">FR</a></li>
                                 <?php endif; ?>
                                 <?php if ($lang !== 'en'): ?>
-                                    <li><a href="?lang=en">EN</a></li>
+                                <li><a href="?lang=en">EN</a></li>
                                 <?php endif; ?>
                             </ul>
                         </div>
@@ -362,38 +362,51 @@ require_once 'includes/lang/' . $lang . '.php';
                     <section id="custom-solutions">
                         <div class="container">
                             <h2 class="quote">
-                                <span>"</span><?php echo $lang_data['custom_solutions_quote']; ?><span>"</span>
+                                <span>"</span>
+                                <?php echo $lang_data['custom_solutions_quote']; ?><span>"</span>
                             </h2>
                             <div class="solutions-grid">
                                 <div class="solution-item">
                                     <img src="https://cdn-icons-png.flaticon.com/512/2951/2951388.png"
                                         alt="<?php echo $lang_data['custom_solutions_needs_assessment_alt']; ?>">
-                                    <p><?php echo $lang_data['custom_solutions_needs_assessment']; ?></p>
+                                    <p>
+                                        <?php echo $lang_data['custom_solutions_needs_assessment']; ?>
+                                    </p>
                                 </div>
                                 <div class="solution-item">
                                     <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
                                         alt="<?php echo $lang_data['custom_solutions_design_alt']; ?>">
-                                    <p><?php echo $lang_data['custom_solutions_design']; ?></p>
+                                    <p>
+                                        <?php echo $lang_data['custom_solutions_design']; ?>
+                                    </p>
                                 </div>
                                 <div class="solution-item">
                                     <img src="https://cdn-icons-png.flaticon.com/512/3478/3478121.png"
                                         alt="<?php echo $lang_data['custom_solutions_implementation_alt']; ?>">
-                                    <p><?php echo $lang_data['custom_solutions_implementation']; ?></p>
+                                    <p>
+                                        <?php echo $lang_data['custom_solutions_implementation']; ?>
+                                    </p>
                                 </div>
                                 <div class="solution-item">
                                     <img src="https://cdn-icons-png.flaticon.com/512/1250/1250620.png"
                                         alt="<?php echo $lang_data['custom_solutions_training_alt']; ?>">
-                                    <p><?php echo $lang_data['custom_solutions_training']; ?></p>
+                                    <p>
+                                        <?php echo $lang_data['custom_solutions_training']; ?>
+                                    </p>
                                 </div>
                                 <div class="solution-item">
                                     <img src="https://cdn-icons-png.flaticon.com/512/1040/1040216.png"
                                         alt="<?php echo $lang_data['custom_solutions_evaluation_alt']; ?>">
-                                    <p><?php echo $lang_data['custom_solutions_evaluation']; ?></p>
+                                    <p>
+                                        <?php echo $lang_data['custom_solutions_evaluation']; ?>
+                                    </p>
                                 </div>
                                 <div class="solution-item">
                                     <img src="https://cdn-icons-png.flaticon.com/512/582/582650.png"
                                         alt="<?php echo $lang_data['custom_solutions_delivery_alt']; ?>">
-                                    <p><?php echo $lang_data['custom_solutions_delivery']; ?></p>
+                                    <p>
+                                        <?php echo $lang_data['custom_solutions_delivery']; ?>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -410,217 +423,389 @@ require_once 'includes/lang/' . $lang . '.php';
                             <div class="portfolio-grid">
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/askoach-project.jpg" alt="<?php echo $lang_data['portfolio_project1_title']; ?>">
+                                        <img src="assets/images/vignettes/askoach-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project1_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project1_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project1_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project1_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project1_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project1_technologies']; ?>
                                         </div>
-                                        <a href="http://www.askoach.fr/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="http://www.askoach.fr/" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/coreasusa-project.jpg" alt="<?php echo $lang_data['portfolio_project2_title']; ?>">
+                                        <img src="assets/images/vignettes/coreasusa-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project2_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project2_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project2_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project2_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project2_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project2_technologies']; ?>
                                         </div>
-                                        <a href="https://coreasusa.ma/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://coreasusa.ma/" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/3rosesmenage-project.jpg" alt="<?php echo $lang_data['portfolio_project3_title']; ?>">
+                                        <img src="assets/images/vignettes/3rosesmenage-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project3_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project3_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project3_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project3_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project3_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project3_technologies']; ?>
                                         </div>
-                                        <a href="https://www.3rosesmenage.net/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://www.3rosesmenage.net/" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/touretfere-project.jpg" alt="<?php echo $lang_data['portfolio_project4_title']; ?>">
+                                        <img src="assets/images/vignettes/touretfere-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project4_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project4_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project4_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project4_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project4_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project4_technologies']; ?>
                                         </div>
-                                        <a href="https://touretfere.ma/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://touretfere.ma/" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/horizonequipement-project.jpg" alt="<?php echo $lang_data['portfolio_project5_title']; ?>">
+                                        <img src="assets/images/vignettes/horizonequipement-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project5_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project5_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project5_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project5_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project5_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project5_technologies']; ?>
                                         </div>
-                                        <a href="https://horizonequipement.ma/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://horizonequipement.ma/" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/m3alem-project.jpg" alt="<?php echo $lang_data['portfolio_project6_title']; ?>">
+                                        <img src="assets/images/vignettes/m3alem-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project6_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project6_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project6_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project6_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project6_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project6_technologies']; ?>
                                         </div>
-                                        <a href="https://web.archive.org/web/20140517191508/http://m3alem.com/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://web.archive.org/web/20140517191508/http://m3alem.com/"
+                                            target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/perrybellgard-project.jpg" alt="<?php echo $lang_data['portfolio_project7_title']; ?>">
+                                        <img src="assets/images/vignettes/perrybellgard-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project7_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project7_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project7_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project7_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project7_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project7_technologies']; ?>
                                         </div>
-                                        <a href="https://test.3rosesmenage.net/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://test.3rosesmenage.net/" target="_blank"
+                                            class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/portfolio-project.jpg" alt="<?php echo $lang_data['portfolio_project8_title']; ?>">
+                                        <img src="assets/images/vignettes/portfolio-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project8_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project8_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project8_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project8_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project8_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project8_technologies']; ?>
                                         </div>
-                                        <a href="https://portfolio.3rosesmenage.net/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://portfolio.3rosesmenage.net/" target="_blank"
+                                            class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/edificesbrillants-project.jpg" alt="<?php echo $lang_data['portfolio_project9_title']; ?>">
+                                        <img src="assets/images/vignettes/edificesbrillants-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project9_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project9_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project9_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project9_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project9_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project9_technologies']; ?>
                                         </div>
-                                        <a href="https://edificesbrillants.com/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://edificesbrillants.com/" target="_blank"
+                                            class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/groupbelsa-project.jpg" alt="<?php echo $lang_data['portfolio_project10_title']; ?>">
+                                        <img src="assets/images/vignettes/groupbelsa-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project10_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project10_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project10_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project10_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project10_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project10_technologies']; ?>
                                         </div>
-                                        <a href="https://groupbelsa.com/" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://groupbelsa.com/" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/tik-project.jpg" alt="<?php echo $lang_data['portfolio_project11_title']; ?>">
+                                        <img src="assets/images/vignettes/tik-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project11_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project11_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project11_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project11_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project11_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project11_technologies']; ?>
                                         </div>
-                                        <a href="docs/Tik-App.pdf" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="docs/Tik-App.pdf" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/at-project.jpg" alt="<?php echo $lang_data['portfolio_project12_title']; ?>">
+                                        <img src="assets/images/vignettes/at-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project12_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project12_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project12_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project12_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project12_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project12_technologies']; ?>
                                         </div>
-                                        <a href="https://github.com/biko2020?tab=repositories" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://github.com/biko2020?tab=repositories" target="_blank"
+                                            class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/tik-mobile-project.jpg" alt="<?php echo $lang_data['portfolio_project13_title']; ?>">
+                                        <img src="assets/images/vignettes/tik-mobile-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project13_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project13_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project13_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project13_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project13_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project13_technologies']; ?>
                                         </div>
-                                        <a href="docs/Tik-App.pdf" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="docs/Tik-App.pdf" target="_blank" class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/sogf-project.jpg" alt="<?php echo $lang_data['portfolio_project14_title']; ?>">
+                                        <img src="assets/images/vignettes/sogf-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project14_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project14_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project14_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project14_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project14_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project14_technologies']; ?>
                                         </div>
-                                        <a href="https://github.com/biko2020?tab=repositories" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://github.com/biko2020?tab=repositories" target="_blank"
+                                            class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="portfolio-item">
                                     <div class="portfolio-image">
-                                        <img src="assets/images/vignettes/gemap-project.jpg" alt="<?php echo $lang_data['portfolio_project15_title']; ?>">
+                                        <img src="assets/images/vignettes/gemap-project.jpg"
+                                            alt="<?php echo $lang_data['portfolio_project15_title']; ?>">
                                     </div>
                                     <div class="portfolio-content">
-                                        <h3><?php echo $lang_data['portfolio_project15_title']; ?></h3>
-                                        <p><?php echo $lang_data['portfolio_project15_description']; ?></p>
+                                        <h3>
+                                            <?php echo $lang_data['portfolio_project15_title']; ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $lang_data['portfolio_project15_description']; ?>
+                                        </p>
                                         <div class="portfolio-technologies">
                                             <?php echo $lang_data['portfolio_project15_technologies']; ?>
                                         </div>
-                                        <a href="https://github.com/biko2020?tab=repositories" target="_blank" class="btn btn-primary"><?php echo $lang_data['portfolio_view_project']; ?></a>
+                                        <a href="https://github.com/biko2020?tab=repositories" target="_blank"
+                                            class="btn btn-primary">
+                                            <?php echo $lang_data['portfolio_view_project']; ?>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <section id="about">
-                        <h2>
-                            <?php echo $lang_data['about_title']; ?>
-                        </h2>
-                        <!-- About me content -->
+                    <section class="static-background">
+                        <h1>Solutions personnalisées pour votre secteur d'activité !</h1>
+                    </section>
+
+                    <section id="about-me">
+                        <div class="container">
+                            <h2>
+                                <?php echo $lang_data['about_title']; ?>
+                            </h2>
+                            <div class="about-content">
+                                <div class="intro">
+                                    <h3><?php echo $lang_data['about_subtitle']; ?></h3>
+                                    <p>
+                                        <?php echo $lang_data['about_description_paragraph1']; ?>
+                                    </p>
+                                    <p>
+                                        <?php echo $lang_data['about_description_paragraph2']; ?>
+                                    </p>
+                                    <p>
+                                        <?php echo $lang_data['about_description_paragraph3']; ?>
+                                    </p>
+                                    <p>
+                                        <?php echo $lang_data['about_description_paragraph4']; ?>
+                                    </p>
+                                    <p>
+                                        <strong><?php echo $lang_data['about_contact_message']; ?></strong>
+                                    </p>
+                                </div>
+                                <div class="skills">
+                                    <h3><?php echo $lang_data['about_key_skills_title']; ?></h3>
+                                    <ul>
+                                        <li><strong><?php echo $lang_data['about_skill_1_title']; ?></strong> <?php echo $lang_data['about_skill_1_description']; ?></li>
+                                        <li><strong><?php echo $lang_data['about_skill_2_title']; ?></strong> <?php echo $lang_data['about_skill_2_description']; ?></li>
+                                        <li><strong><?php echo $lang_data['about_skill_3_title']; ?></strong> <?php echo $lang_data['about_skill_3_description']; ?></li>
+                                        <li><strong><?php echo $lang_data['about_skill_4_title']; ?></strong> <?php echo $lang_data['about_skill_4_description']; ?></li>
+                                        <li><strong><?php echo $lang_data['about_skill_5_title']; ?></strong> <?php echo $lang_data['about_skill_5_description']; ?></li>
+                                        <li><strong><?php echo $lang_data['about_skill_6_title']; ?></strong> <?php echo $lang_data['about_skill_6_description']; ?></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </section>
 
                     <section id="contact">
-                        <h2>
-                            <?php echo $lang_data['contact_title']; ?>
-                        </h2>
-                        <form method="post">
-                            <!-- Contact form fields -->
-                        </form>
+                        <div class="container">
+                            <h2>
+                                <?php echo $lang_data['contact_title']; ?>
+                            </h2>
+                            <p class="contact-subtitle">
+                                <?php echo $lang_data['contact_description']; ?>
+                            </p>
+                            
+                            <div class="contact-info">
+                                <div class="contact-info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <h3><?php echo $lang_data['contact_phone_label']; ?></h3>
+                                    <p><?php echo $lang_data['contact_phone']; ?></p>
+                                </div>
+                                <div class="contact-info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <h3><?php echo $lang_data['contact_email_label']; ?></h3>
+                                    <p><?php echo $lang_data['contact_email']; ?></p>
+                                </div>
+                            </div>
+
+                            <form class="contact-form" action="send_message.php" method="post">
+                                <input type="text" name="name" placeholder="<?php echo $lang_data['contact_form_name']; ?>" required>
+                                <input type="email" name="email" placeholder="<?php echo $lang_data['contact_form_email']; ?>" required>
+                                <textarea name="message" placeholder="<?php echo $lang_data['contact_form_message']; ?>" required></textarea>
+                                <button type="submit" class="btn-submit">
+                                    <?php echo $lang_data['contact_form_submit']; ?>
+                                </button>
+                            </form>
+                        </div>
                     </section>
                 </div>
             </main>

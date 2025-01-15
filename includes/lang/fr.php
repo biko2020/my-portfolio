@@ -94,6 +94,27 @@ $lang_data = [
     'skills_methods_title' => 'MÉTHODES et PATERNES',
     'skills_methods_description' => 'Architecture Logicielle: MVC, Modélisation : UML, Gestion de Version:Git, Conteneurisation: Docker, Intégration Continue et Déploiement Continu',
 
+    // About Me Section
+    'about_subtitle' => 'Analyste-développeur avec plus de 10 ans d\'expérience',
+    'about_description_paragraph1' => 'Fort de plus de 10 ans d\'expérience dans le développement de solutions informatiques, j\'ai contribué à des projets innovants et impactants dans divers domaines.',
+    'about_description_paragraph2' => 'Mon expertise couvre l\'ensemble du cycle de vie des projets IT, de l\'analyse des besoins à la mise en œuvre et la formation des utilisateurs.',
+    'about_description_paragraph3' => 'En tant qu\'analyste de données et développeur, j\'excelle dans l\'analyse et la conception de solutions IT, la création de sites web, d\'applications mobiles et de logiciels, ainsi que dans l\'administration de bases de données et de systèmes.',
+    'about_description_paragraph4' => 'Je maîtrise également les outils de contrôle de version, de conteneurisation et d\'intégration continue, tout en mettant en œuvre des mesures de sécurité contre les cyberattaques.',
+    'about_contact_message' => 'N\'hésitez pas à me contacter si vous avez besoin de mes services.',
+    'about_key_skills_title' => 'Compétences Clés',
+    'about_skill_1_title' => 'Analyse et Conception de Solutions IT : ',
+    'about_skill_1_description' => 'Maîtrise dans l\'analyse des besoins utilisateurs et la conception de solutions adaptées.',
+    'about_skill_2_title' => 'Développement : ',
+    'about_skill_2_description' => 'Création de sites web, applications mobiles, et logiciels personnalisés.',
+    'about_skill_3_title' => 'Formation et Assistance : ',
+    'about_skill_3_description' => 'Formation des utilisateurs et assistance technique pour une adoption optimale des solutions.',
+    'about_skill_4_title' => 'Outils DevOps : ',
+    'about_skill_4_description' => 'Utilisation d\'outils de versioning, conteneurisation, et intégration continue pour une gestion efficace des projets.',
+    'about_skill_5_title' => 'Sécurité Informatique : ',
+    'about_skill_5_description' => 'Mise en place de mesures de sécurité robustes pour la protection contre les cyberattaques.',
+    'about_skill_6_title' => 'Gestion des Bases de Données et Administration Systèmes : ',
+    'about_skill_6_description' => 'Administration et gestion de bases de données complexes et de serveurs Windows et Linux.',
+
     // Portfolio Section
     'portfolio_subtitle' => 'Une vitrine de solutions innovantes et de réalisations professionnelles',
     'portfolio_project1_title' => 'Plateforme E-learning',
@@ -156,6 +177,19 @@ $lang_data = [
     'portfolio_project15_title' => 'GESTION DES MARCHÉS PUBLIC (GEMAP)',
     'portfolio_project15_description' => 'GEMAP est une application dédiée à la gestion des marchés publics au Maroc, spécialement conçue pour les services publics de l\'État marocain. Elle intègre trois modules principaux : Module Passation (facilitant le processus de passation des marchés publics, de la préparation des appels d\'offres à la sélection des fournisseurs), Module Exécution (assurant le suivi et la gestion de l\'exécution des marchés), et Module Bon de Commande (gérant la création, l\'approbation, et le suivi des bons de commande).',
     'portfolio_project15_technologies' => 'VB6, VB.NET, MS SQL-Server',
+
+    // Contact Section
+    'contact_subtitle' => 'Restons en contact',
+    'contact_description' => 'Vous avez un projet ou une question ? N\'hésitez pas à me contacter.',
+    'contact_phone_label' => 'Téléphone',
+    'contact_phone' => '+212 663 828 405',
+    'contact_email_label' => 'E-mail',
+    'contact_email' => 'aitoufkirbrahimab@gmail.com',
+    'contact_form_name' => 'Votre Nom',
+    'contact_form_email' => 'Votre E-mail',
+    'contact_form_message' => 'Votre Message',
+    'contact_form_submit' => 'Envoyer le Message',
+
 ];
 
 // Image Data
