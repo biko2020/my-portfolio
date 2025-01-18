@@ -94,6 +94,23 @@ $lang_data = [
     'skills_methods_title' => 'MÉTHODES et PATERNES',
     'skills_methods_description' => 'Architecture Logicielle: MVC, Modélisation : UML, Gestion de Version:Git, Conteneurisation: Docker, Intégration Continue et Déploiement Continu',
 
+    // Programs Section
+    'programs_title' => 'PROGRAMMES D\'APPRENTISSAGE',
+    'mes_formations' => 'Mes Formations',
+    'programs_intro' => 'Je propose des programmes d\'apprentissage sur mesure conçus pour répondre aux besoins spécifiques de chaque apprenant.',
+    'programs_list_of_learning' => 'LISTE DES FORMATIONS',
+    'programs_levels' => 'Niveaux : Débutant - Intermédiaire - Avancé',
+    'programs_category_data_analysis' => 'Catégorie : <strong>Analyse de Données</strong>',
+    'programs_category_programming_languages' => 'Catégorie : <strong>Langages de Programmation</strong>',
+    'programs_category_frameworks' => 'Catégorie : <strong>Frameworks</strong>',
+    'programs_category_web_development' => 'Catégorie : <strong>Développement Web</strong>',
+    'programs_description_1' => 'Que vous souhaitiez maîtriser un <strong>langage de programmation</strong>, approfondir vos connaissances sur un <strong>framework spécifique</strong>, ou perfectionner vos compétences en <strong>SQL</strong>, mes cours sont adaptés à votre niveau et à vos objectifs.',
+    'programs_description_2' => 'Chaque programme est structuré pour vous offrir un apprentissage pratique et interactif, vous permettant d\'acquérir des compétences solides et directement applicables dans votre domaine d\'expertise.',
+    'programs_delivery_title' => 'LES FORMATIONS SE DÉROULENT SOIT :',
+    'programs_delivery_online' => 'En ligne',
+    'programs_delivery_corporate' => 'En entreprise',
+    'programs_delivery_public' => 'Dans un lieu public',
+
     // About Me Section
     'about_subtitle' => 'Analyste-développeur avec plus de 10 ans d\'expérience',
     'about_description_paragraph1' => 'Fort de plus de 10 ans d\'expérience dans le développement de solutions informatiques, j\'ai contribué à des projets innovants et impactants dans divers domaines.',
@@ -189,6 +206,30 @@ $lang_data = [
     'contact_form_email' => 'Votre E-mail',
     'contact_form_message' => 'Votre Message',
     'contact_form_submit' => 'Envoyer le Message',
+
+    // Footer translations
+    'footer_copyright' => ' 2025 Brahim Aitoufkir. Tous droits réservés.',
+    'footer_social_connect' => 'Connectons-nous',
+    'footer_quick_links' => 'Liens Rapides',
+    'footer_menu_home' => 'Accueil',
+    'footer_menu_about' => 'À Propos',
+    'footer_menu_portfolio' => 'Portfolio',
+    'footer_menu_contact' => 'Contact',
+    'footer_legal_notice' => 'Mentions Légales',
+    'footer_privacy_policy' => 'Politique de Confidentialité',
+
+    // Add these to existing translations
+    'footer_download_cv' => 'Télécharger CV',
+    'footer_skills' => 'Compétences',
+    'footer_testimonials' => 'Témoignages',
+
+    // Footer Mentions
+    'footer_mentions_legales' => 'Mentions Légales',
+    'footer_mentions_formation' => 'Formation',
+    'footer_politique_confidentialite' => 'Politique de Confidentialité',
+    'footer_en_ligne' => 'En ligne',
+    'footer_en_entreprise' => 'En entreprise',
+    'footer_lieu_public' => 'Dans un lieu public',
 
 ];
 

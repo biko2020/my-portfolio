@@ -15,17 +15,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Close menu when a link is clicked
         const menuLinks = menu.querySelectorAll('a');
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menu.classList.remove('show');
-                menuToggle.setAttribute('aria-expanded', 'false');
-                menuToggle.classList.remove('active');
+        if (menuLinks) {
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.remove('show');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.classList.remove('active');
+                });
             });
-        });
+        }
 
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
-            if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            if (menu && menuToggle && !menu.contains(event.target) && !menuToggle.contains(event.target)) {
                 menu.classList.remove('show');
                 menuToggle.setAttribute('aria-expanded', 'false');
                 menuToggle.classList.remove('active');
@@ -33,20 +35,41 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Language Switcher Functionality
-    const toggleButton = document.getElementById("language-toggle");
-    const languageOptions = document.getElementById("language-options");
+    // Scroll to Top Functionality
+    const scrollToTopButton = document.getElementById('scroll-to-top');
 
-    if (toggleButton && languageOptions) {
-        // Toggle dropdown visibility
-        toggleButton.addEventListener("click", () => {
-            languageOptions.classList.toggle("hidden");
+    if (scrollToTopButton) {
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopButton.classList.add('show');
+            } else {
+                scrollToTopButton.classList.remove('show');
+            }
+        });
+
+        scrollToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Language Switcher Functionality
+    const languageToggle = document.getElementById('language-toggle');
+    const languageOptions = document.getElementById('language-options');
+
+    if (languageToggle && languageOptions) {
+        languageToggle.addEventListener('click', function() {
+            languageOptions.classList.toggle('hidden');
         });
 
         // Close dropdown when clicking outside
-        document.addEventListener("click", (event) => {
-            if (!toggleButton.contains(event.target) && !languageOptions.contains(event.target)) {
-                languageOptions.classList.add("hidden");
+        document.addEventListener('click', function(event) {
+            if (languageToggle && languageOptions && 
+                !languageToggle.contains(event.target) && 
+                !languageOptions.contains(event.target)) {
+                languageOptions.classList.add('hidden');
             }
         });
     }

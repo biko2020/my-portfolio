@@ -1,0 +1,106 @@
+  /* Header Styles */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+ 
+    padding: 10px 20px
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.banner-text h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Programs Section */
+.programs {
+    flex: 2;
+}
+
+.programs h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.programs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.programs ul li {
+    margin-bottom: 5px;
+}
+
+/* Courses Section */
+.courses {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.courses h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.course-category {
+    margin-bottom: 20px;
+}
+
+.course-category h3, 
+.course-category p {
+    margin: 5px 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.tags span {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.tags span:hover {
+    background-color: var(--bar-color);
+}
+
+#active{
+    background-color: var(--secondary-color);
+}
+

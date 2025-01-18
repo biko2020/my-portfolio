@@ -178,6 +178,23 @@ $lang_data = [
         'skills_methods_title' => 'METHODS and PATTERNS',
         'skills_methods_description' => 'Software Architecture: MVC, Modeling: UML, Version Control: Git, Containerization: Docker, Continuous Integration and Continuous Deployment',
 
+    // Programs Section
+    'programs_title' => 'LEARNING PROGRAMS',
+    'mes_formations' => 'My Training Programs',
+    'programs_intro' => 'I offer customized learning programs designed to meet the specific needs of each learner.',
+    'programs_list_of_learning' => 'LIST OF TRAINING PROGRAMS',
+    'programs_levels' => 'Levels: Beginner - Intermediate - Advanced',
+    'programs_category_data_analysis' => 'Category: <strong>Data Analysis</strong>',
+    'programs_category_programming_languages' => 'Category: <strong>Programming Languages</strong>',
+    'programs_category_frameworks' => 'Category: <strong>Frameworks</strong>',
+    'programs_category_web_development' => 'Category: <strong>Web Development</strong>',
+    'programs_description_1' => 'Whether you want to master a <strong>programming language</strong>, deepen your knowledge of a <strong>specific framework</strong>, or improve your <strong>SQL</strong> skills, my courses are tailored to your level and objectives.',
+    'programs_description_2' => 'Each program is structured to provide practical and interactive learning, allowing you to acquire solid skills directly applicable in your field of expertise.',
+    'programs_delivery_title' => 'TRAINING CAN BE CONDUCTED:',
+    'programs_delivery_online' => 'Online',
+    'programs_delivery_corporate' => 'In company',
+    'programs_delivery_public' => 'In a public place',
+
     // Contact Section
     'contact_subtitle' => 'Let\'s Stay Connected',
     'contact_description' => 'Have a project or a question? Feel free to contact me.',
@@ -189,6 +206,30 @@ $lang_data = [
     'contact_form_email' => 'Your Email',
     'contact_form_message' => 'Your Message',
     'contact_form_submit' => 'Send Message',
+
+    // Footer translations
+    'footer_copyright' => ' 2025 Brahim Aitoufkir. All Rights Reserved.',
+    'footer_social_connect' => 'Let\'s Connect',
+    'footer_quick_links' => 'Quick Links',
+    'footer_menu_home' => 'Home',
+    'footer_menu_about' => 'About',
+    'footer_menu_portfolio' => 'Portfolio',
+    'footer_menu_contact' => 'Contact',
+    'footer_legal_notice' => 'Legal Notice',
+    'footer_privacy_policy' => 'Privacy Policy',
+
+    // Add these to existing translations
+    'footer_download_cv' => 'Download CV',
+    'footer_skills' => 'Skills',
+    'footer_testimonials' => 'Testimonials',
+
+    // Footer Mentions
+    'footer_mentions_legales' => 'Legal Notices',
+    'footer_mentions_formation' => 'Training',
+    'footer_politique_confidentialite' => 'Privacy Policy',
+    'footer_en_ligne' => 'Online',
+    'footer_en_entreprise' => 'In Company',
+    'footer_lieu_public' => 'In Public Place',
 ];
 
 // Image Data
