@@ -36,14 +36,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Scroll to Top Functionality
-    const scrollToTopButton = document.getElementById('scroll-to-top');
+    const scrollToTopButton = document.querySelector('#scroll-to-top');
 
     if (scrollToTopButton) {
         window.addEventListener('scroll', () => {
             if (window.pageYOffset > 300) {
-                scrollToTopButton.classList.add('show');
+                scrollToTopButton.style.opacity = '1';
             } else {
-                scrollToTopButton.classList.remove('show');
+                scrollToTopButton.style.opacity = '0';
             }
         });
 

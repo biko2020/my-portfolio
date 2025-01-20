@@ -77,60 +77,60 @@ $lang_data = [
     'portfolio_project1_title' => 'E-Learning Platform',
     'portfolio_project1_description' => 'Full-stack e-learning website with integrated payment system and responsive design',
     'portfolio_project1_technologies' => 'Node.js, Pug, MySQL, Stripe',
-    
+
     'portfolio_project2_title' => 'COREASUSA',
     'portfolio_project2_description' => 'Specialized in selling new and used industrial equipment and materials',
     'portfolio_project2_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project3_title' => '3ROSES MÉNAGE',
     'portfolio_project3_description' => 'Specialized in home and industrial cleaning services',
     'portfolio_project3_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project4_title' => 'TOUR ET FERE',
     'portfolio_project4_description' => 'Industrial machining techniques, specialized in mechanical parts manufacturing',
     'portfolio_project4_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
     'portfolio_view_project' => 'View Project',
-    
+
     'portfolio_project5_title' => 'HORIZONE EQUIPEMENT',
     'portfolio_project5_description' => 'Specialized in selling and importing industrial and technical equipment',
     'portfolio_project5_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project6_title' => 'M3ALEM',
     'portfolio_project6_description' => 'Online platform designed for professionals to find experts in their field based on location',
     'portfolio_project6_technologies' => 'Dreamweaver, ASP, MS SQL-Server, JavaScript',
-    
+
     'portfolio_project7_title' => 'PERRY BELLEGARDE',
     'portfolio_project7_description' => 'Platform dedicated to illustrating the political life of an influential First Nations personality',
     'portfolio_project7_technologies' => 'WordPress, Elementor',
-    
+
     'portfolio_project8_title' => 'Personal Portfolio',
     'portfolio_project8_description' => 'Website showcasing professional journey, highlighting skills and selected projects',
     'portfolio_project8_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project9_title' => 'EDIFICES BRILLANTS',
     'portfolio_project9_description' => 'Platform dedicated to showcasing expertise in metal construction',
     'portfolio_project9_technologies' => 'WordPress, Starter Template',
-    
+
     'portfolio_project10_title' => 'GROUP BELSA',
     'portfolio_project10_description' => 'Platform dedicated to showcasing expertise in the agricultural domain',
     'portfolio_project10_technologies' => 'WordPress, Starter Template',
-    
+
     'portfolio_project11_title' => 'TIK-SERVICE PUBLIC-ADMIN',
     'portfolio_project11_description' => 'Intranet solution designed to streamline complaint handling for public service dysfunctions. The platform simplifies the complaint process by enabling photo and text-based submissions, addressing the challenges of lengthy and complex traditional complaint procedures. This approach allows for better administrative feedback and problem resolution.',
     'portfolio_project11_technologies' => 'Firebase (Google Cloud Platform), Nuxt.js, Firebase Admin SDK (PHP), Cloud Firestore, Docker, Github Action',
-    
+
     'portfolio_project12_title' => 'WORK ACCIDENT MANAGEMENT',
     'portfolio_project12_description' => 'Comprehensive intranet solution specifically designed for insurance brokers to manage and track workplace accidents efficiently.',
     'portfolio_project12_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project13_title' => 'TIK-SERVICE PUBLIC-USER',
     'portfolio_project13_description' => 'Mobile application designed to simplify public service complaint submissions. The app addresses the challenges of lengthy and complex traditional complaint procedures by enabling easy photo and text-based submissions. This approach facilitates a more straightforward complaint method for citizens, reducing barriers to providing feedback.',
     'portfolio_project13_technologies' => 'Firebase (Google Cloud Platform), Flutter, Dart, Cloud Firestore, Docker, Github Action',
-    
+
     'portfolio_project14_title' => 'SOGF ÉLEVAGE',
     'portfolio_project14_description' => 'An innovative and high-performance solution to easily deploy animal production for farmers, technicians, and farm collaborators. Multi-sector approach addressing all farm activities: dairy and meat cattle, goats/sheep, poultry/rabbits, and horses.',
     'portfolio_project14_technologies' => 'VB.NET, MS SQL-Server',
-    
+
     'portfolio_project15_title' => 'PUBLIC MARKET MANAGEMENT (GEMAP)',
     'portfolio_project15_description' => 'A dedicated application for managing public markets in Morocco, specially designed for public services of the Moroccan State. It integrates three main modules: Procurement Module (facilitating public market processes from tender preparation to supplier selection), Execution Module (ensuring rigorous monitoring of market execution, deadlines, and budgets), and Purchase Order Module (managing creation, approval, and tracking of purchase orders).',
     'portfolio_project15_technologies' => 'VB6, VB.NET, MS SQL-Server',
@@ -159,24 +159,24 @@ $lang_data = [
     // Skills Section
     'skills_subtitle' => 'Put these skills to good use',
     'skills_domains_title' => 'Areas of Expertise',
-    
-        // Skills Categories
-        'skills_design_title' => 'DESIGN & IMPLEMENTATION',
-        'skills_design_description' => 'Website, Intranet, Desktop Application, Mobile Application',
-        'skills_design_technologies' => 'Node.js - Vuejs - WORDPRESS',
-    
-        'skills_data_title' => 'DATA ANALYSIS',
-        'skills_data_description' => 'Data collection and preparation, Report creation and evolution, Analysis tool management, Results distribution',
-        'skills_data_technologies' => 'Python - Excel - Access - Tableau - Power BI - VBA - Statistics',
-    
-        'skills_training_title' => 'TRAINING',
-        'skills_training_description' => 'Front-end web development, Back-end web development, Office tools, Database design and modeling',
-    
-        'skills_solutions_title' => 'IT SOLUTIONS FOR YOUR BUSINESS',
-        'skills_solutions_description' => 'Needs assessment and diagnosis, Custom solution design, Implementation and integration, Training and support, Assessment and optimization',
-    
-        'skills_methods_title' => 'METHODS and PATTERNS',
-        'skills_methods_description' => 'Software Architecture: MVC, Modeling: UML, Version Control: Git, Containerization: Docker, Continuous Integration and Continuous Deployment',
+
+    // Skills Categories
+    'skills_design_title' => 'DESIGN & IMPLEMENTATION',
+    'skills_design_description' => 'Website, Intranet, Desktop Application, Mobile Application',
+    'skills_design_technologies' => 'Node.js - Vuejs - WORDPRESS',
+
+    'skills_data_title' => 'DATA ANALYSIS',
+    'skills_data_description' => 'Data collection and preparation, Report creation and evolution, Analysis tool management, Results distribution',
+    'skills_data_technologies' => 'Python - Excel - Access - Tableau - Power BI - VBA - Statistics',
+
+    'skills_training_title' => 'TRAINING',
+    'skills_training_description' => 'Front-end web development, Back-end web development, Office tools, Database design and modeling',
+
+    'skills_solutions_title' => 'IT SOLUTIONS FOR YOUR BUSINESS',
+    'skills_solutions_description' => 'Needs assessment and diagnosis, Custom solution design, Implementation and integration, Training and support, Assessment and optimization',
+
+    'skills_methods_title' => 'METHODS and PATTERNS',
+    'skills_methods_description' => 'Software Architecture: MVC, Modeling: UML, Version Control: Git, Containerization: Docker, Continuous Integration and Continuous Deployment',
 
     // Programs Section
     'programs_title' => 'LEARNING PROGRAMS',
@@ -230,6 +230,21 @@ $lang_data = [
     'footer_en_ligne' => 'Online',
     'footer_en_entreprise' => 'In Company',
     'footer_lieu_public' => 'In Public Place',
+
+    // Excel Training Page
+    'excel_learning_title' => 'What You Will Learn',
+    'excel_about_course_title' => 'About This Course',
+    'excel_course_description' => 'Microsoft Excel is a powerful and versatile spreadsheet software widely used for organizing, analyzing, and visualizing data. It enables complex calculations, creating charts, and managing databases. With features like formulas, pivot tables, and macros, Excel is an essential tool for professionals in various fields, including finance, project management, and data analysis. It facilitates informed decision-making by offering quick and precise solutions for information processing.',
+    'excel_programs_title' => 'Excel Programs:',
+    'excel_text_split_title' => 'Split Text into Columns',
+    'excel_text_split_intro' => 'The "Split Text into Columns" function in Microsoft Excel allows you to divide text contained in a single cell into multiple columns, based on a specific separator such as a comma, space, or another character. This feature is particularly useful for organizing and structuring imported or non-structured data.',
+    'excel_functions_title' => 'Functions',
+    'excel_cell_merge_title' => 'Merge Two Cells',
+    'excel_cell_merge_description' => 'When merging two cells in MS Excel 365, only the value of the top-left cell is retained, and other data is deleted. If you want to merge cells without losing data, here is an alternative approach:',
+    'excel_exercise_question' => 'Which Excel function allows you to count cells that meet a specific condition?',
+    'excel_exercise_options' => ['COUNT', 'COUNTIF', 'SUMIF'],
+    'excel_exercise_answer_button' => 'Answer',
+
 ];
 
 // Image Data

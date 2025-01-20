@@ -14,13 +14,13 @@
               <?php echo $lang_data['footer_quick_links']; ?>
             </h4>
             <ul class="footer-links">
-              <li><a href="/#about-me">
+              <li><a href="../index.php#about-me">
                   <?php echo $lang_data['footer_menu_about']; ?>
                 </a></li>
-              <li><a href="/#portfolio">
+              <li><a href="../index.php#portfolio">
                   <?php echo $lang_data['footer_menu_portfolio']; ?>
                 </a></li>
-              <li><a href="/#contact">
+              <li><a href="../index.php#contact">
                   <?php echo $lang_data['footer_menu_contact']; ?>
                 </a></li>
             </ul>
@@ -65,7 +65,7 @@
         <!-- New Footer Menu -->
         <nav class="footer-menu">
           <div class="footer-menu-item">
-            <a href="/#skills">
+            <a href="../index.php#skills">
               <?php echo $lang_data['footer_skills']; ?>
             </a>
           </div>

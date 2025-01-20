@@ -137,52 +137,52 @@ $lang_data = [
     'portfolio_project1_title' => 'Plateforme E-learning',
     'portfolio_project1_description' => 'Site web e-learning full-stack avec système de paiement intégré et design responsive',
     'portfolio_project1_technologies' => 'Node.js, Pug, MySQL, Stripe',
-    
+
     'portfolio_project2_title' => 'COREASUSA',
     'portfolio_project2_description' => 'Spécialisée dans la vente de matériel et d\'équipement industriel, neuf ou d\'occasion',
     'portfolio_project2_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project3_title' => '3ROSES MÉNAGE',
     'portfolio_project3_description' => 'Spécialisée dans les services de ménage à domicile et industriel',
     'portfolio_project3_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project4_title' => 'TOUR ET FERE',
     'portfolio_project4_description' => 'Secteur industriel des techniques d\'usinage, spécialisée dans la fabrication de pièces mécaniques',
     'portfolio_project4_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
     'portfolio_view_project' => 'Voir le Projet',
-    
+
     'portfolio_project5_title' => 'HORIZONE EQUIPEMENT',
     'portfolio_project5_description' => 'Spécialisée dans la vente et l\'importation de matériel industriel et technique',
     'portfolio_project5_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project6_title' => 'M3ALEM',
     'portfolio_project6_description' => 'Plateforme en ligne spécialement conçue pour les professionnels afin de trouver des experts dans leur domaine en fonction de leur localisation',
     'portfolio_project6_technologies' => 'Dreamweaver, ASP, MS SQL-Server, JavaScript',
-    
+
     'portfolio_project7_title' => 'PERRY BELLEGARDE',
     'portfolio_project7_description' => 'Plateforme dédiée à l\'illustration de la vie politique d\'une personnalité influente des Premières Nations',
     'portfolio_project7_technologies' => 'WordPress, Elementor',
-    
+
     'portfolio_project8_title' => 'Portfolio Personnel',
     'portfolio_project8_description' => 'Site web illustrant le parcours professionnel, mettant en avant les compétences et les projets sélectionnés',
     'portfolio_project8_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project9_title' => 'EDIFICES BRILLANTS',
     'portfolio_project9_description' => 'Plateforme dédiée à l\'illustration de l\'expertise en construction métallique',
     'portfolio_project9_technologies' => 'WordPress, Starter Template',
-    
+
     'portfolio_project10_title' => 'GROUP BELSA',
     'portfolio_project10_description' => 'Plateforme dédiée à l\'illustration de l\'expertise dans le domaine agricole',
     'portfolio_project10_technologies' => 'WordPress, Starter Template',
-    
+
     'portfolio_project11_title' => 'TIK-SERVICE PUBLIC-ADMIN',
     'portfolio_project11_description' => 'Le Intranet Tik a pour objectif de faciliter le traitement des réclamations, notamment celles concernant les dysfonctionnements des services publics. Les réclamations peuvent souvent être sources de litiges, ce qui dissuade les gens de les formuler. De plus, la procédure de réclamation est généralement longue et lente. Dans ce contexte, j\'ai conçu cette solution pour permettre le traitement des réclamations par photo et texte, en privilégiant la simplicité. Cela permet de mieux prendre en compte le feedback de l\'administration par rapport au problème soulevé.',
     'portfolio_project11_technologies' => 'Firebase (Google Cloud Platform), Nuxt.js, Firebase Admin SDK (PHP), Cloud Firestore, Docker, Github Action',
-    
+
     'portfolio_project12_title' => 'GESTION ACCIDENT DE TRAVAIL',
     'portfolio_project12_description' => 'Cet intranet de gestion des accidents de travail est une solution complète conçue pour les courtiers d\'assurance',
     'portfolio_project12_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-    
+
     'portfolio_project13_title' => 'TIK-SERVICE PUBLIC-USER',
     'portfolio_project13_description' => 'Tik mobile a pour objectif de faciliter les réclamations, notamment celles concernant les dysfonctionnements des services publics. Les réclamations peuvent souvent être sources de litiges, ce qui dissuade les gens de les formuler. De plus, la procédure de réclamation est généralement longue et lente. Dans ce contexte, j\'ai conçu cette application pour permettre l\'envoi des réclamations via photo et texte, en privilégiant la simplicité. Cela facilite la méthode de réclamation pour les citoyens.',
     'portfolio_project13_technologies' => 'Firebase (Google Cloud Platform), Flutter, Dart, Cloud Firestore, Docker, Github Action',
@@ -190,7 +190,7 @@ $lang_data = [
     'portfolio_project14_title' => 'SOGF ÉLEVAGE',
     'portfolio_project14_description' => 'SOGF Élevage est une solution innovante et performante pour déployer facilement la production animale auprès des éleveurs, techniciens et collaborateurs d\'une ferme. Multi-filières, elle s\'adresse à toutes les activités d\'une ferme : bovins lait et viande, caprins/ovins, volailles/lapins, chevaux.',
     'portfolio_project14_technologies' => 'VB.NET, MS SQL-Server',
-    
+
     'portfolio_project15_title' => 'GESTION DES MARCHÉS PUBLIC (GEMAP)',
     'portfolio_project15_description' => 'GEMAP est une application dédiée à la gestion des marchés publics au Maroc, spécialement conçue pour les services publics de l\'État marocain. Elle intègre trois modules principaux : Module Passation (facilitant le processus de passation des marchés publics, de la préparation des appels d\'offres à la sélection des fournisseurs), Module Exécution (assurant le suivi et la gestion de l\'exécution des marchés), et Module Bon de Commande (gérant la création, l\'approbation, et le suivi des bons de commande).',
     'portfolio_project15_technologies' => 'VB6, VB.NET, MS SQL-Server',
@@ -230,6 +230,20 @@ $lang_data = [
     'footer_en_ligne' => 'En ligne',
     'footer_en_entreprise' => 'En entreprise',
     'footer_lieu_public' => 'Dans un lieu public',
+
+    // Excel Training Page
+    'excel_learning_title' => 'Ce Que Vous Allez Apprendre',
+    'excel_about_course_title' => 'À propos de ce cours',
+    'excel_course_description' => 'Microsoft Excel est un logiciel de feuille de calcul puissant et polyvalent, largement utilisé pour organiser, analyser et visualiser des données. Il permet de réaliser des calculs complexes, de créer des graphiques, et de gérer des bases de données. Grâce à ses fonctionnalités comme les formules, les tableaux croisés dynamiques et les macros, Excel est un outil indispensable pour les professionnels dans divers domaines, notamment la finance, la gestion de projet, et l\'analyse de données. Il facilite la prise de décisions informées en offrant des solutions rapides et précises pour le traitement des informations.',
+    'excel_programs_title' => 'Programmes Excel :',
+    'excel_text_split_title' => 'Fractionner le texte en colonnes',
+    'excel_text_split_intro' => 'La fonction "Fractionner le texte en colonnes" dans Microsoft Excel permet de diviser du texte contenu dans une seule cellule en plusieurs colonnes, en fonction d\'un séparateur spécifique, comme une virgule, un espace, ou un autre caractère. Cette fonctionnalité est particulièrement utile pour organiser et structurer des données importées ou saisies de manière non structurée.',
+    'excel_functions_title' => 'Fonctions',
+    'excel_cell_merge_title' => 'Fusionnez deux cellules',
+    'excel_cell_merge_description' => 'Lorsque vous fusionnez deux cellules dans MS Excel 365, seule la valeur de la cellule supérieure gauche est conservée, et les autres données sont supprimées. Si vous voulez fusionner des cellules sans perdre de données, voici une approche alternative :',
+    'excel_exercise_question' => 'Quelle fonction Excel permet de compter les cellules qui répondent à une condition spécifique ?',
+    'excel_exercise_options' => ['COUNT', 'COUNTIF', 'SUMIF'],
+    'excel_exercise_answer_button' => 'Réponse',
 
 ];
 

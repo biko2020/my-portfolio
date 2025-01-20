@@ -26,7 +26,6 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
-
 /* General layout styling */
 #wrapper {
   margin: 0;
@@ -1367,10 +1366,10 @@ footer {
   }
 
   /* Social Icons Centering */
-  .social-icons {
-    justify-content: center;
-    align-items: center;
-}
+    .social-icons {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
