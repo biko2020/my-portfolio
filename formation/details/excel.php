@@ -4,18 +4,18 @@ session_start();
 
 // Check if a language is selected via URL
 if (isset($_GET['lang'])) {
-  $selected_lang = $_GET['lang'];
-  // Validate the selected language
-  if (in_array($selected_lang, ['en', 'fr'])) {
-    $_SESSION['lang'] = $selected_lang; // Update the session variable
-  }
-
-  // Get the current page URL without query parameters
-  $current_page = strtok($_SERVER["REQUEST_URI"], '?');
-
-  // Redirect back to the current page
-  header("Location: " . $current_page);
-  exit();
+    $selected_lang = $_GET['lang'];
+    // Validate the selected language
+    if (in_array($selected_lang, ['en', 'fr'])) {
+        $_SESSION['lang'] = $selected_lang; // Update the session variable
+    }
+    
+    // Get the current page URL without query parameters
+    $current_page = strtok($_SERVER["REQUEST_URI"], '?');
+    
+    // Redirect back to the current page
+    header("Location: " . $current_page);
+    exit();
 }
 
 // Set the default language if not already set
@@ -52,7 +52,7 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
       <i class="fas fa-chevron-up"></i>
     </div>
     <div class="site-content">
-      <?php require_once BASE_DIR . '../includes/header.php'; ?>
+      <?php require_once BASE_DIR . '../includes/header.php';?>
 
       <header class="banner">
         <img src="../../assets/images/bg_animate_01_small.jpg" alt="Training Image">
@@ -84,8 +84,8 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
             <section class="learning-media padding-bottom-30">
               <div class="learning-media-row">
                 <div class="learning-media-column">
-                  <img src="../../assets/images/Excel-logo.png" alt="Excel" class="learning-image img-responsive"
-                    width="100" height="100" />
+                  <img src="../../assets/images/Excel-logo.png" alt="Excel" class="learning-image img-responsive" width="100"
+                    height="100" />
                 </div>
               </div>
             </section>
@@ -127,8 +127,8 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
                   <?php echo $lang_data['excel_text_split_intro']; ?>
                 </p>
                 <hr />
-                <iframe class="responsive-iframe" width="560" height="315"
-                  src="https://www.youtube.com/embed/HgtB0PnekIo" title="Fractionner le Texte" frameborder="0"
+                <iframe  class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/HgtB0PnekIo"
+                  title="Fractionner le Texte" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
 
@@ -151,8 +151,8 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
                 <p class="learning-description">
                   <?php echo $lang_data['excel_cell_merge_description']; ?>
                 </p>
-                <iframe class="responsive-iframe" width="560" height="315"
-                  src="https://www.youtube.com/embed/c2LHruCusSU" title="Fractionner le Texte" frameborder="0"
+                <iframe  class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/c2LHruCusSU"
+                  title="Fractionner le Texte" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
 
@@ -162,10 +162,10 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
                     <?php echo $lang_data['excel_exercise_question']; ?>
                   </p>
                   <?php foreach ($lang_data['excel_exercise_options'] as $option): ?>
-                    <span class="learning-description"> <span class="learning-output-leftSpace">-
-                        <?php echo $option; ?>
-                      </span> </span>
-                    <br>
+                  <span class="learning-description"> <span class="learning-output-leftSpace">-
+                      <?php echo $option; ?>
+                    </span> </span>
+                  <br>
                   <?php endforeach; ?>
                 </div>
                 <!--Input-->
@@ -193,8 +193,8 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
       </main>
 
       <?php
-      require_once BASE_DIR . '../includes/footer.php';
-      ?>
+require_once BASE_DIR . '../includes/footer.php';
+?>
     </div>
   </div>
   <script src="../../assets/js/main.js"></script>
