@@ -77,60 +77,60 @@ $lang_data = [
     'portfolio_project1_title' => 'E-Learning Platform',
     'portfolio_project1_description' => 'Full-stack e-learning website with integrated payment system and responsive design',
     'portfolio_project1_technologies' => 'Node.js, Pug, MySQL, Stripe',
-
+    
     'portfolio_project2_title' => 'COREASUSA',
     'portfolio_project2_description' => 'Specialized in selling new and used industrial equipment and materials',
     'portfolio_project2_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-
+    
     'portfolio_project3_title' => '3ROSES MÉNAGE',
     'portfolio_project3_description' => 'Specialized in home and industrial cleaning services',
     'portfolio_project3_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-
+    
     'portfolio_project4_title' => 'TOUR ET FERE',
     'portfolio_project4_description' => 'Industrial machining techniques, specialized in mechanical parts manufacturing',
     'portfolio_project4_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
     'portfolio_view_project' => 'View Project',
-
+    
     'portfolio_project5_title' => 'HORIZONE EQUIPEMENT',
     'portfolio_project5_description' => 'Specialized in selling and importing industrial and technical equipment',
     'portfolio_project5_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-
+    
     'portfolio_project6_title' => 'M3ALEM',
     'portfolio_project6_description' => 'Online platform designed for professionals to find experts in their field based on location',
     'portfolio_project6_technologies' => 'Dreamweaver, ASP, MS SQL-Server, JavaScript',
-
+    
     'portfolio_project7_title' => 'PERRY BELLEGARDE',
     'portfolio_project7_description' => 'Platform dedicated to illustrating the political life of an influential First Nations personality',
     'portfolio_project7_technologies' => 'WordPress, Elementor',
-
+    
     'portfolio_project8_title' => 'Personal Portfolio',
     'portfolio_project8_description' => 'Website showcasing professional journey, highlighting skills and selected projects',
     'portfolio_project8_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-
+    
     'portfolio_project9_title' => 'EDIFICES BRILLANTS',
     'portfolio_project9_description' => 'Platform dedicated to showcasing expertise in metal construction',
     'portfolio_project9_technologies' => 'WordPress, Starter Template',
-
+    
     'portfolio_project10_title' => 'GROUP BELSA',
     'portfolio_project10_description' => 'Platform dedicated to showcasing expertise in the agricultural domain',
     'portfolio_project10_technologies' => 'WordPress, Starter Template',
-
+    
     'portfolio_project11_title' => 'TIK-SERVICE PUBLIC-ADMIN',
     'portfolio_project11_description' => 'Intranet solution designed to streamline complaint handling for public service dysfunctions. The platform simplifies the complaint process by enabling photo and text-based submissions, addressing the challenges of lengthy and complex traditional complaint procedures. This approach allows for better administrative feedback and problem resolution.',
     'portfolio_project11_technologies' => 'Firebase (Google Cloud Platform), Nuxt.js, Firebase Admin SDK (PHP), Cloud Firestore, Docker, Github Action',
-
+    
     'portfolio_project12_title' => 'WORK ACCIDENT MANAGEMENT',
     'portfolio_project12_description' => 'Comprehensive intranet solution specifically designed for insurance brokers to manage and track workplace accidents efficiently.',
     'portfolio_project12_technologies' => 'HTML, CSS, PHP, MySQL, JavaScript',
-
+    
     'portfolio_project13_title' => 'TIK-SERVICE PUBLIC-USER',
     'portfolio_project13_description' => 'Mobile application designed to simplify public service complaint submissions. The app addresses the challenges of lengthy and complex traditional complaint procedures by enabling easy photo and text-based submissions. This approach facilitates a more straightforward complaint method for citizens, reducing barriers to providing feedback.',
     'portfolio_project13_technologies' => 'Firebase (Google Cloud Platform), Flutter, Dart, Cloud Firestore, Docker, Github Action',
-
+    
     'portfolio_project14_title' => 'SOGF ÉLEVAGE',
     'portfolio_project14_description' => 'An innovative and high-performance solution to easily deploy animal production for farmers, technicians, and farm collaborators. Multi-sector approach addressing all farm activities: dairy and meat cattle, goats/sheep, poultry/rabbits, and horses.',
     'portfolio_project14_technologies' => 'VB.NET, MS SQL-Server',
-
+    
     'portfolio_project15_title' => 'PUBLIC MARKET MANAGEMENT (GEMAP)',
     'portfolio_project15_description' => 'A dedicated application for managing public markets in Morocco, specially designed for public services of the Moroccan State. It integrates three main modules: Procurement Module (facilitating public market processes from tender preparation to supplier selection), Execution Module (ensuring rigorous monitoring of market execution, deadlines, and budgets), and Purchase Order Module (managing creation, approval, and tracking of purchase orders).',
     'portfolio_project15_technologies' => 'VB6, VB.NET, MS SQL-Server',
@@ -159,24 +159,24 @@ $lang_data = [
     // Skills Section
     'skills_subtitle' => 'Put these skills to good use',
     'skills_domains_title' => 'Areas of Expertise',
-
-    // Skills Categories
-    'skills_design_title' => 'DESIGN & IMPLEMENTATION',
-    'skills_design_description' => 'Website, Intranet, Desktop Application, Mobile Application',
-    'skills_design_technologies' => 'Node.js - Vuejs - WORDPRESS',
-
-    'skills_data_title' => 'DATA ANALYSIS',
-    'skills_data_description' => 'Data collection and preparation, Report creation and evolution, Analysis tool management, Results distribution',
-    'skills_data_technologies' => 'Python - Excel - Access - Tableau - Power BI - VBA - Statistics',
-
-    'skills_training_title' => 'TRAINING',
-    'skills_training_description' => 'Front-end web development, Back-end web development, Office tools, Database design and modeling',
-
-    'skills_solutions_title' => 'IT SOLUTIONS FOR YOUR BUSINESS',
-    'skills_solutions_description' => 'Needs assessment and diagnosis, Custom solution design, Implementation and integration, Training and support, Assessment and optimization',
-
-    'skills_methods_title' => 'METHODS and PATTERNS',
-    'skills_methods_description' => 'Software Architecture: MVC, Modeling: UML, Version Control: Git, Containerization: Docker, Continuous Integration and Continuous Deployment',
+    
+        // Skills Categories
+        'skills_design_title' => 'DESIGN & IMPLEMENTATION',
+        'skills_design_description' => 'Website, Intranet, Desktop Application, Mobile Application',
+        'skills_design_technologies' => 'Node.js - Vuejs - WORDPRESS',
+    
+        'skills_data_title' => 'DATA ANALYSIS',
+        'skills_data_description' => 'Data collection and preparation, Report creation and evolution, Analysis tool management, Results distribution',
+        'skills_data_technologies' => 'Python - Excel - Access - Tableau - Power BI - VBA - Statistics',
+    
+        'skills_training_title' => 'TRAINING',
+        'skills_training_description' => 'Front-end web development, Back-end web development, Office tools, Database design and modeling',
+    
+        'skills_solutions_title' => 'IT SOLUTIONS FOR YOUR BUSINESS',
+        'skills_solutions_description' => 'Needs assessment and diagnosis, Custom solution design, Implementation and integration, Training and support, Assessment and optimization',
+    
+        'skills_methods_title' => 'METHODS and PATTERNS',
+        'skills_methods_description' => 'Software Architecture: MVC, Modeling: UML, Version Control: Git, Containerization: Docker, Continuous Integration and Continuous Deployment',
 
     // Programs Section
     'programs_title' => 'LEARNING PROGRAMS',
@@ -245,6 +245,148 @@ $lang_data = [
     'excel_exercise_options' => ['COUNT', 'COUNTIF', 'SUMIF'],
     'excel_exercise_answer_button' => 'Answer',
 
+    // PowerBI Formation Language Data
+    'powerbi_learning_title' => 'What You Will Learn',
+    'powerbi_project_title' => 'Project: Performance Analysis of a Retail Sales Company',
+    'powerbi_project_description' => 'This project involves analyzing sales data for a company specializing in retail sales of DIY articles. The objective is to understand its overall performance, identify sales trends, determine the most profitable products, and evaluate customer satisfaction. The Power BI tool will be used to visualize and interpret this data in a clear and effective manner.',
+    'powerbi_project_steps_title' => 'Project Steps:',
+    
+    // Project Steps
+    'powerbi_step_comparison' => 'What is the difference between Power BI Desktop and Power BI Service?',
+    'powerbi_step_install' => 'Download and install Power BI Desktop',
+    'powerbi_step_diagrams' => 'Diagrams',
+    'powerbi_step_data_collection' => 'Data Collection',
+    'powerbi_step_data_cleaning' => 'Data Cleaning',
+    'powerbi_step_data_analysis' => 'Exploratory Analysis',
+    'powerbi_step_data_modeling' => 'Modeling',
+    'powerbi_step_data_visualization' => 'Visualization',
+    'powerbi_step_decision_making' => 'Decision Making',
+
+    // Comparison Section
+    'powerbi_comparison_title' => 'What is the difference between Power BI Desktop and Power BI Service?',
+    'powerbi_desktop_title' => 'Power BI Desktop: The Playground for Creation',
+    'powerbi_desktop_free_app' => 'Free Desktop Application: ',
+    'powerbi_desktop_description' => 'This is the environment where you will create, model, and visualize your data.',
+    'powerbi_desktop_flexibility_title' => 'Flexibility: ',
+    'powerbi_desktop_flexibility_description' => 'It allows you to connect to multiple data sources, transform data, create interactive reports, and personalized dashboards.',
+    
+    'powerbi_service_title' => 'Power BI Service: Sharing and Collaboration',
+    'powerbi_service_cloud_title' => 'Cloud Platform: ',
+    'powerbi_service_description' => 'This is where you publish and share reports created in Power BI Desktop.',
+
+    // Install Section
+    'powerbi_install_title' => 'Install Power BI Desktop',
+    'powerbi_install_description' => 'Download Power BI Desktop from the official Microsoft website and install it on your computer.',
+
+    // Diagrams Section
+    'powerbi_diagrams_title' => 'Diagrams',
+    'powerbi_diagrams_subtitle' => 'The different stages involved in sales analysis',
+
+    // Data Collection Section
+    'powerbi_data_collection_title' => 'Data Collection',
+    'powerbi_data_collection_subtitle' => 'Data collection is a crucial step to obtain meaningful results. To start this phase:',
+    'powerbi_data_collection_description' => 'Define the data to be collected:
+    - Customer demographic data: Age, gender, geographic location.
+    - Product data: Categories, sub-categories, prices, margins, suppliers.
+    - Sales data: Total sales amount, number of transactions, best-selling products, peak periods.
+    - Customer data: Purchase frequency, average basket, retention rate.
+    - Sales channel data: In-store sales, online sales, telephone sales.',
+    'powerbi_data_collection_database_title' => 'A diagram representing the company\'s database structure',
+    'powerbi_data_collection_excel_title' => 'Data files in Excel format',
+
+    // Data Cleaning Section
+    'powerbi_data_cleaning_title' => 'Data Cleaning',
+    'powerbi_data_cleaning_subtitle' => 'Removing duplicates, correcting errors.',
+    'powerbi_data_cleaning_description' => 'During this data cleaning phase, we use Microsoft Excel to remove duplicates using the REMOVE.DUPLICATES function, format dates to DD/MM/YYYY, capitalize texts, and correct input errors, such as numeric values entered as text.',
+
+    // Data Analysis Section
+    'powerbi_data_analysis_title' => 'Exploratory Analysis',
+    'powerbi_data_analysis_subtitle' => 'Identifying trends, anomalies, correlations.',
+    'powerbi_data_analysis_description' => 'Exploratory analysis is a crucial phase in our project, where we will understand the data structure, identify patterns, discover relationships, and formulate hypotheses.',
+    'powerbi_data_analysis_understand_data_title' => 'Understanding the data: ',
+    'powerbi_data_analysis_understand_data_description' => 'Familiarize with the data, verify its quality, and detect potential issues (missing values, inconsistencies).',
+    'powerbi_data_analysis_identify_trends_title' => 'Identifying trends: ',
+    'powerbi_data_analysis_identify_trends_description' => 'Highlights general trends, time evolutions, activity peaks and troughs.',
+    'powerbi_data_analysis_discover_relationships_title' => 'Discovering relationships: ',
+    'powerbi_data_analysis_discover_relationships_description' => 'Identify correlations between different variables, for example, between sales and seasonality, or between product type and customer profile.',
+    'powerbi_data_analysis_formulate_hypotheses_title' => 'Formulating hypotheses: ',
+    'powerbi_data_analysis_formulate_hypotheses_description' => 'By observing the data, we can formulate hypotheses that will be tested more rigorously later.',
+
+    // Data Modeling Section
+    'powerbi_data_modeling_title' => 'Modeling',
+    'powerbi_data_modeling_subtitle' => 'Creating predictive models (to forecast future sales).',
+    'powerbi_data_modeling_description' => 'In this phase, we will develop mathematical and statistical models to predict future sales trends using historical data.',
+
+    // Data Visualization Section
+    'powerbi_data_visualization_title' => 'Visualization',
+    'powerbi_data_visualization_subtitle' => 'Creating charts and dashboards to present results.',
+    'powerbi_data_visualization_description' => 'We will transform our analyzed data into interactive charts, diagrams, and dashboards that allow for quick and intuitive understanding of the insights obtained.',
+
+    // Decision Making Section
+    'powerbi_decision_making_title' => 'Decision Making',
+    'powerbi_decision_making_subtitle' => 'Using insights to optimize business strategies.',
+    'powerbi_decision_making_description' => 'Based on the analyses and visualizations performed, we will formulate concrete strategic recommendations to improve the company\'s performance.',
+
+    // SQL Learning Section
+    'sql_learning_title' => 'What You Will Learn about SQL',
+    'sql_about_course_title' => 'Introduction to SQL',
+    'sql_course_description' => 'In this training, you will learn how to create and manage MySQL databases, transfer data from Excel, and understand fundamental data management concepts.',
+    'sql_programs_title' => 'Project Steps:',
+    'sql_create_database_title' => 'Create a Database',
+    'sql_data_transfer_title' => 'Transfer Data from Excel to a MySQL Database',
+    'sql_create_database_intro' => 'This section will guide you through the process of creating a MySQL database using standard SQL commands.',
+    'sql_tables_description' => 'We will create the following tables for our sales management project:',
+    'sql_tables' => [
+        'Clients',
+        'Products', 
+        'Customer_Satisfaction', 
+        'Sales'
+    ],
+
+    // Python Learning Section
+    'python_learning_title' => 'What You Will Learn about PYTHON',
+    'python_about_course_title' => 'Introduction to Python',
+    'python_course_description' => 'Python is a popular, easy to learn programming language. It is commonly used in the field of data analysis, because there are very efficient libraries available to process large amounts of data. This data analysis stack includes libraries such as NumPy, Pandas, Matplotlib and SciPy that we will familiarize ourselves with during this course.',
+    'python_programs_title' => 'Course Modules:',
+    'python_module1_title' => 'Python Basics',
+    'python_module1_description' => 'is the starting point of your programming learning journey. In this module, you will discover the fundamental concepts of Python, a powerful and versatile programming language.',
+    'python_fundamentals' => 'Fundamentals',
+    'python_module2_title' => 'Python and NumPy',
+    'python_module3_title' => 'Advanced NumPy',
+    'python_module4_title' => 'Pandas Data Analysis',
+    'python_module1_content_title'=>'Module Contents',
+    'python_module1_content_items' => [
+        'Basic Syntax',
+        'Data Types',
+        'Variables and Operators',
+        'Control Structures',
+        'Functions'
+        ],
+    'python_module2_input_output_subtitle' => 'Basic Input and Output',
+    'python_module2_input_output_description' => 'The classic "Hello, world!" program in Python is quite straightforward. To run it, click on the cell with your mouse and press Ctrl + Enter on your keyboard. You can also experiment by changing the text inside the quotes and running the program again.',
+    'python_learning_description_indentation' => 'Indentation is also used in function bodies, if statement branches, and while loops, as we\'ll see later.',
+    'python_learning_description_range' => 'The range(3) expression generates the sequence 0, 1, 2, making it a half-open interval with the endpoint excluded. Generally, range(n) produces integers from <strong>0 to n-1.</strong> Modify the program to print the value of i in each iteration, then rerun it with Control + Enter.',
+    'python_description_print_function' => 'In the print function, numerical expressions are first evaluated and then automatically converted to strings. Subsequently the strings are concatenated with spaces:',
+    'python_description_input_function' => 'To read user input, use the input function with a string parameter that prompts the user. The entered string is stored in the variable name. Run the example below by pressing Control + Enter!',
+    'python_description_indentation' => 'Repetition can be achieved using a for loop. Note that the body of the for loop is indented with a tab or four spaces. Unlike some other languages, braces aren\'t required to define the loop\'s body. The loop\'s body ends when the indentation ends.',
+    'python_description_indentation_print_value' => 'Modify the program to print the value of i in each iteration, then rerun it with Control + Enter.',
+    'python_exercise_multiplication_subtitle' => 'Exercise (Multiplication)',
+    'python_exercise_multiplication_description' => 'Write a program that generates the following output using a for <strong class="keyword">loop</strong> in your solution.',
+    'python_variables_data_types_subtitle' => 'Variables and data types',
+    'python_variables_data_types_description' => 'We previously demonstrated that assigning a value to a <strong id="keyword">variable</strong> is very simple:',
+    'python_creating_strings_subtitle' => 'Creating Strings',
+    'python_creating_strings_description' => 'A <strong>string</strong> is a sequence of characters enclosed in single (\')\' or double (") quotes. This allows for including quotation marks within the string, such as "I don\'t want to go!" or by escaping them with a backslash: \'I don\'t want to go\'. Strings can also include escape sequences like <strong>\\n</strong> for newline and <strong>\\t</strong> for tab.',
+    'python_string_concatenation_description' => 'While the <strong>+</strong> operator can be used to concatenate strings, it\'s more efficient to use the <strong>join</strong> method when combining a large number of strings. For instance, instead of concatenating a list of strings with +, you can use join like this:',
+    'python_string_interpolation_methods_description' => 'Different methods of string interpolation each have their own strengths and weaknesses. Choosing which one to use is typically a matter of personal preference. In this course, most examples and model solutions will primarily use f-strings and the format method. For more details about format specifiers, look <strong><a href="https://pyformat.info/#number">here</a></strong>',
+    'python_expressions_subtitle' => 'Expressions',
+    'python_expressions_description' => 'An expression in Python is code that produces a value, made up of literals (e.g., 2, 5.2, "text") or variables combined with operators like arithmetic, comparison, function calls, indexing, and attribute references. Here are some examples:',
+    'python_statements_subtitle' => 'Statements',
+    'python_statements_description' => 'Statements are commands that perform an action. For instance, a function call that stands alone (not embedded in another expression) is a statement. Similarly, assigning a value to a variable is also a statement.',
+    'python_augmented_assignment_description' => 'Note that in Python there are no operators <strong>++</strong> or <strong>--</strong> unlike in some other languages. The operators like <strong>+= -= *= /= //= %= &= |= ^= >>= <<= **=</strong> are augmented assignment operators in Python.',
+    'python_loops_subtitle' => 'Loops for Repetitive Tasks',
+    'python_loops_description' => 'In Python, there are two types of loops: <strong>while</strong> and <strong>for</strong>. We\'ve already touched on the for loop briefly. Now, let\'s explore the while loop.',
+    'python_for_statement_description' => 'Another way of repeating statements is with the for statement.',
+    
 ];
 
 // Image Data
