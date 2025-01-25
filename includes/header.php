@@ -65,13 +65,14 @@
         </button>
         <ul id="language-options" class="hidden">
           <?php if ($lang !== 'fr'): ?>
-            <li><a href="?lang=fr">FR</a></li>
+          <li><a href="?lang=fr">FR</a></li>
           <?php endif; ?>
           <?php if ($lang !== 'en'): ?>
-            <li><a href="?lang=en">EN</a></li>
+          <li><a href="?lang=en">EN</a></li>
           <?php endif; ?>
         </ul>
       </div>
     </nav>
   </div>
 </header>
+ 

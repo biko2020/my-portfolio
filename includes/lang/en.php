@@ -188,6 +188,8 @@ $lang_data = [
     'programs_category_programming_languages' => 'Category: <strong>Programming Languages</strong>',
     'programs_category_frameworks' => 'Category: <strong>Frameworks</strong>',
     'programs_category_web_development' => 'Category: <strong>Web Development</strong>',
+    'programs_category_cyber_security' =>'Category: <strong>Cybersecurity Ethical Hacker
+</strong>',
     'programs_description_1' => 'Whether you want to master a <strong>programming language</strong>, deepen your knowledge of a <strong>specific framework</strong>, or improve your <strong>SQL</strong> skills, my courses are tailored to your level and objectives.',
     'programs_description_2' => 'Each program is structured to provide practical and interactive learning, allowing you to acquire solid skills directly applicable in your field of expertise.',
     'programs_delivery_title' => 'TRAINING CAN BE CONDUCTED:',

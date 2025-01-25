@@ -301,7 +301,7 @@ require_once BASE_DIR . '../includes/lang/' . $lang . '.php';
                 <hr />
                 <br>
 
-				<h2 class="learning-subtitle">
+			    	<h2 class="learning-subtitle">
                   <?php echo $lang_data['python_loops_subtitle']; ?>
                 </h2>
                 <p class="learning-description">

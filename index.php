@@ -1,4 +1,5 @@
 <?php
+define('BASE_DIR', __DIR__ . '/');
 session_start();
 
 // Check if a language is selected via URL
@@ -8,15 +9,24 @@ if (isset($_GET['lang'])) {
     if (in_array($selected_lang, ['en', 'fr'])) {
         $_SESSION['lang'] = $selected_lang; // Update the session variable
     }
-    // Redirect to avoid query parameters in the URL after setting the session
-    header("Location: index.php");
+    
+    // Get the current page URL without query parameters
+    $current_page = strtok($_SERVER["REQUEST_URI"], '?');
+    
+    // Redirect back to the current page
+    header("Location: " . $current_page);
     exit();
 }
 
 // Set the default language if not already set
 $lang = isset($_SESSION['lang']) ? $_SESSION['lang'] : 'fr';
-require_once 'includes/lang/' . $lang . '.php';
+
+// Include configuration and necessary files
+// require_once BASE_DIR . '/config.php';
+require_once BASE_DIR . 'includes/lang/' . $lang . '.php';
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
@@ -40,83 +50,7 @@ require_once 'includes/lang/' . $lang . '.php';
     </div>
 
     <div class="site-content">
-      <header>
-        <div class="header-container">
-          <div class="top-bar-container">
-            <div class="row">
-              <div class="col-xs-12 header-top">
-                <ul class="list-inline info-list">
-                  <li>
-                    <a href="tel:&#43;&#50;&#49;&#50;&#54;&#54;&#51;&#56;&#50;&#56;&#52;&#48;&#53;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone" width="21"
-                        height="21"> &nbsp;
-                      &#43;&#50;&#49;&#50;&#54;&#54;&#51;&#56;&#50;&#56;&#52;&#48;&#53;
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="mailto:&#97;&#105;&#116;&#111;&#117;&#102;&#107;&#105;&#114;&#98;&#114;&#97;&#104;&#105;&#109;&#97;&#98;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
-                      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Envelope" width="21"
-                        height="21" style="filter: invert(100%);">
-                      &nbsp;
-                      &#97;&#105;&#116;&#111;&#117;&#102;&#107;&#105;&#114;&#98;&#114;&#97;&#104;&#105;&#109;&#97;&#98;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-                    </a>
-                  </li>
-                </ul>
-                <div id="social-links">
-                  <a href="https://www.linkedin.com/in/brahim-aitoufkir-74506021a" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Profile" width="21"
-                      height="21">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <nav>
-            <div class="logo">
-              <a href="index.php">
-                <img src="<?php echo $img_data['picture']; ?>" alt="AIT OUFKIR BRAHIM" width="50" height="50" />
-              </a>
-            </div>
-            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu">
-              <span class="hamburger-icon"></span>
-            </button>
-            <ul id="menu" class="nav-menu">
-              <li><a href="#services">
-                  <?php echo $lang_data['menu_services']; ?>
-                </a></li>
-              <li><a href="#skills">
-                  <?php echo $lang_data['menu_skills']; ?>
-                </a></li>
-              <li><a href="#portfolio">
-                  <?php echo $lang_data['menu_portfolio']; ?>
-                </a></li>
-              <li><a href="#about-me">
-                  <?php echo $lang_data['menu_about']; ?>
-                </a></li>
-              <li><a href="#contact">
-                  <?php echo $lang_data['menu_contact']; ?>
-                </a></li>
-            </ul>
-            <div class="language-switcher">
-              <button id="language-toggle" aria-label="Toggle Language">
-                <span id="current-lang">
-                  <?php echo strtoupper($lang); ?>
-                </span>
-                <i class="arrow-icon"></i>
-              </button>
-              <ul id="language-options" class="hidden">
-                <?php if ($lang !== 'fr'): ?>
-                <li><a href="?lang=fr">FR</a></li>
-                <?php endif; ?>
-                <?php if ($lang !== 'en'): ?>
-                <li><a href="?lang=en">EN</a></li>
-                <?php endif; ?>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+     <?php require_once BASE_DIR . '/includes/header.php';?>
 
       <div id="slider-container">
         <div class="slide">
@@ -847,84 +781,7 @@ require_once 'includes/lang/' . $lang . '.php';
         </div>
       </main>
 
-      <footer>
-        <div class="footer-content">
-          <div class="footer-section">
-            <h4>
-              <?php echo $lang_data['footer_quick_links']; ?>
-            </h4>
-            <ul class="footer-links">
-              <li><a href="#about-me">
-                  <?php echo $lang_data['footer_menu_about']; ?>
-                </a></li>
-              <li><a href="#portfolio">
-                  <?php echo $lang_data['footer_menu_portfolio']; ?>
-                </a></li>
-              <li><a href="#contact">
-                  <?php echo $lang_data['footer_menu_contact']; ?>
-                </a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h4>
-              <?php echo $lang_data['footer_social_connect']; ?>
-            </h4>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/brahim-aitoufkir-74506021a/" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/biko2020" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://x.com/AitOufkir" target="_blank" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-          </div>
-          <div class="footer-section">
-            <a href="formation/index.php">
-              <h4>
-                <?php echo $lang_data['footer_mentions_formation']; ?>
-              </h4>
-            </a>
-
-            <ul class="footer-links">
-              <li><a href="#">
-                  <?php echo $lang_data['footer_en_ligne']; ?>
-                </a></li>
-              <li><a href="#">
-                  <?php echo $lang_data['footer_en_entreprise']; ?>
-                </a></li>
-              <li><a href="#">
-                  <?php echo $lang_data['footer_lieu_public']; ?>
-                </a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- New Footer Menu -->
-        <nav class="footer-menu">
-          <div class="footer-menu-item">
-            <a href="#skills">
-              <?php echo $lang_data['footer_skills']; ?>
-            </a>
-          </div>
-          <div class="footer-menu-item">
-            <a href="#testimonials">
-              <?php echo $lang_data['footer_testimonials']; ?>
-            </a>
-          </div>
-          <div class="footer-menu-item">
-            <a href="docs/cv.pdf" download>
-              <?php echo $lang_data['footer_download_cv']; ?>
-            </a>
-          </div>
-        </nav>
-
-        <div class="footer-bottom">
-          <?php echo $lang_data['footer_copyright']; ?>
-        </div>
-      </footer>
+      <?php require_once BASE_DIR . '/includes/footer.php';?>
 
     </div>
   </div>

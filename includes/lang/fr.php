@@ -104,6 +104,8 @@ $lang_data = [
     'programs_category_programming_languages' => 'Catégorie : <strong>Langages de Programmation</strong>',
     'programs_category_frameworks' => 'Catégorie : <strong>Frameworks</strong>',
     'programs_category_web_development' => 'Catégorie : <strong>Développement Web</strong>',
+    'programs_category_cyber_security' =>'Category: <strong>Hacker éthique en cybersécurité
+    </strong>',
     'programs_description_1' => 'Que vous souhaitiez maîtriser un <strong>langage de programmation</strong>, approfondir vos connaissances sur un <strong>framework spécifique</strong>, ou perfectionner vos compétences en <strong>SQL</strong>, mes cours sont adaptés à votre niveau et à vos objectifs.',
     'programs_description_2' => 'Chaque programme est structuré pour vous offrir un apprentissage pratique et interactif, vous permettant d\'acquérir des compétences solides et directement applicables dans votre domaine d\'expertise.',
     'programs_delivery_title' => 'LES FORMATIONS SE DÉROULENT SOIT :',

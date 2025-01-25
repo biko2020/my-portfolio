@@ -144,6 +144,17 @@ require_once BASE_DIR . 'includes/lang/' . $lang . '.php';
               <span>Sécurité Web</span>
             </div>
           </div>
+          <div class="course-category">
+            <p>
+              <?php echo $lang_data['programs_category_cyber_security']; ?>
+            </p>
+            <div class="tags">
+              <span id="active"><a href="./details/cyberIntroduction.pdf">Ethical Hacker-Introduction</a></span>
+              <span id="active"><a href="./details/cyberVulnerabilityScanning.pdf">Information Gathering and Vulnerability Scanning</a></span>
+              <span id="active"><a href="./details/cyberExploitingNetworks.pdf">Exploiting Wired and Wireless Networks</a></span>
+
+            </div>
+          </div>
         </aside>
 
       </main>
