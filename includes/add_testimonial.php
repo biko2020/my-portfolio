@@ -1,4 +1,7 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 define('BASE_DIR', dirname(__DIR__));
 session_start();
 
@@ -75,7 +78,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
         }
 
         // Read existing testimonials
-        $data = json_decode(file_get_contents($jsonFile), true);
+        $data = ['testimonials' => []];
+        if (file_exists($jsonFile)) {
+            $jsonContent = file_get_contents($jsonFile);
+            if ($jsonContent !== false) {
+                $parsedData = json_decode($jsonContent, true);
+                if (json_last_error() === JSON_ERROR_NONE && is_array($parsedData)) {
+                    $data = $parsedData;
+                } else {
+                    error_log('JSON Decode Error: ' . json_last_error_msg());
+                }
+            } else {
+                error_log('Failed to read JSON file: ' . $jsonFile);
+            }
+        }
         
         // Generate new ID
         $newId = count($data['testimonials']) + 1;
@@ -210,7 +226,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
                                 <label for="company">Company</label>
                                 <input type="text" id="company" name="company">
                             </div>
-                   <!-- In the form section, update the testimonial textarea -->
                             <div class="form-group">
                                 <label for="testimonial">Testimonial *</label>
                                 <textarea 
