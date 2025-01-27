@@ -125,13 +125,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
             }
         }
 
-        // Prepare new testimonial
+
+        $testimonial = trim($_POST['testimonial'] ?? '');
+        $testimonial = html_entity_decode($testimonial, ENT_QUOTES, 'UTF-8');
+            
+        // Prepare the new testimonial array
         $newTestimonial = [
             'id' => $newId,
             'name' => trim($_POST['name'] ?? ''),
             'role' => trim($_POST['role'] ?? ''),
             'company' => trim($_POST['company'] ?? ''),
-            'testimonial' => trim($_POST['testimonial'] ?? ''),
+            'testimonial' => $testimonial,
             'profile_picture' => $profilePicture,
             'date' => date('Y-m-d')
         ];
@@ -149,16 +153,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
             throw new Exception('Testimonial must be 200 characters or less');
         }
         // Sanitize input
-        $newTestimonial['name'] = htmlspecialchars($newTestimonial['name'], ENT_QUOTES, 'UTF-8');
-        $newTestimonial['role'] = htmlspecialchars($newTestimonial['role'], ENT_QUOTES, 'UTF-8');
-        $newTestimonial['company'] = htmlspecialchars($newTestimonial['company'], ENT_QUOTES, 'UTF-8');
-        $newTestimonial['testimonial'] = htmlspecialchars($newTestimonial['testimonial'], ENT_QUOTES, 'UTF-8');
+        $newTestimonial['name'] = trim($newTestimonial['name']);
+        $newTestimonial['role'] = trim($newTestimonial['role']);
+        $newTestimonial['company'] = trim($newTestimonial['company']);
+        $newTestimonial['testimonial'] = trim($newTestimonial['testimonial']);
 
         // Add new testimonial
         $data['testimonials'][] = $newTestimonial;
         
         // Write back to file
-        $result = file_put_contents($jsonFile, json_encode($data, JSON_PRETTY_PRINT));
+        $result = file_put_contents($jsonFile, json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
         
         if ($result === false) {
             throw new Exception('Failed to write testimonial to file');

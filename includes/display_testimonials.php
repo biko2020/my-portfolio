@@ -51,7 +51,7 @@ $testimonials = json_decode(file_get_contents($jsonFile), true)['testimonials'];
               <?php foreach ($testimonials as $testimonial): ?>
               <div class="testimonial-card">
                 <?php if (!empty($testimonial['profile_picture'])): ?>
-                  <img src="../<?php echo htmlspecialchars($testimonial['profile_picture']); ?>" 
+                  <img class="testimonial-profile-pic" src="../<?php echo htmlspecialchars($testimonial['profile_picture']); ?>" 
                        alt="<?php echo htmlspecialchars($testimonial['name']); ?>" 
                        class="testimonial-avatar">
                 <?php endif; ?>
